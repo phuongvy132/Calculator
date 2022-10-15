@@ -31,10 +31,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtA = new System.Windows.Forms.TextBox();
+            this.txtB = new System.Windows.Forms.TextBox();
+            this.txtTong = new System.Windows.Forms.TextBox();
+            this.btCong = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -64,50 +64,51 @@
             this.label3.Text = "Tổng:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // txtA
             // 
-            this.textBox1.Location = new System.Drawing.Point(183, 83);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(392, 35);
-            this.textBox1.TabIndex = 1;
+            this.txtA.Location = new System.Drawing.Point(183, 83);
+            this.txtA.Name = "txtA";
+            this.txtA.Size = new System.Drawing.Size(392, 35);
+            this.txtA.TabIndex = 1;
             // 
-            // textBox2
+            // txtB
             // 
-            this.textBox2.Location = new System.Drawing.Point(183, 146);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(392, 35);
-            this.textBox2.TabIndex = 1;
+            this.txtB.Location = new System.Drawing.Point(183, 146);
+            this.txtB.Name = "txtB";
+            this.txtB.Size = new System.Drawing.Size(392, 35);
+            this.txtB.TabIndex = 1;
             // 
-            // textBox3
+            // txtTong
             // 
-            this.textBox3.Location = new System.Drawing.Point(183, 203);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(392, 35);
-            this.textBox3.TabIndex = 1;
+            this.txtTong.Location = new System.Drawing.Point(183, 203);
+            this.txtTong.Name = "txtTong";
+            this.txtTong.Size = new System.Drawing.Size(392, 35);
+            this.txtTong.TabIndex = 1;
             // 
-            // button1
+            // btCong
             // 
-            this.button1.Location = new System.Drawing.Point(252, 305);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(159, 72);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Cộng";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btCong.Location = new System.Drawing.Point(252, 305);
+            this.btCong.Name = "btCong";
+            this.btCong.Size = new System.Drawing.Size(159, 72);
+            this.btCong.TabIndex = 2;
+            this.btCong.Text = "Cộng";
+            this.btCong.UseVisualStyleBackColor = true;
+            this.btCong.Click += new System.EventHandler(this.btCong_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(663, 582);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btCong);
+            this.Controls.Add(this.txtTong);
+            this.Controls.Add(this.txtB);
+            this.Controls.Add(this.txtA);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.Margin = new System.Windows.Forms.Padding(7);
             this.Name = "Form1";
             this.Text = "Phép tính";
             this.ResumeLayout(false);
@@ -120,10 +121,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtA;
+        private System.Windows.Forms.TextBox txtB;
+        private System.Windows.Forms.TextBox txtTong;
+        private System.Windows.Forms.Button btCong;
     }
 }
 
