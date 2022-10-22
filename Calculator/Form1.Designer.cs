@@ -33,9 +33,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtA = new System.Windows.Forms.TextBox();
             this.txtB = new System.Windows.Forms.TextBox();
-            this.txtTong = new System.Windows.Forms.TextBox();
+            this.txtKQ = new System.Windows.Forms.TextBox();
             this.btCong = new System.Windows.Forms.Button();
             this.btTru = new System.Windows.Forms.Button();
+            this.btNhan = new System.Windows.Forms.Button();
+            this.btChia = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -62,7 +64,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(134, 43);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Tổng:";
+            this.label3.Text = "Kết quả:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtA
@@ -79,18 +81,18 @@
             this.txtB.Size = new System.Drawing.Size(392, 35);
             this.txtB.TabIndex = 1;
             // 
-            // txtTong
+            // txtKQ
             // 
-            this.txtTong.Location = new System.Drawing.Point(183, 203);
-            this.txtTong.Name = "txtTong";
-            this.txtTong.Size = new System.Drawing.Size(392, 35);
-            this.txtTong.TabIndex = 1;
+            this.txtKQ.Location = new System.Drawing.Point(183, 203);
+            this.txtKQ.Name = "txtKQ";
+            this.txtKQ.Size = new System.Drawing.Size(392, 35);
+            this.txtKQ.TabIndex = 1;
             // 
             // btCong
             // 
-            this.btCong.Location = new System.Drawing.Point(95, 305);
+            this.btCong.Location = new System.Drawing.Point(78, 305);
             this.btCong.Name = "btCong";
-            this.btCong.Size = new System.Drawing.Size(159, 72);
+            this.btCong.Size = new System.Drawing.Size(94, 72);
             this.btCong.TabIndex = 2;
             this.btCong.Text = "Cộng";
             this.btCong.UseVisualStyleBackColor = true;
@@ -98,22 +100,44 @@
             // 
             // btTru
             // 
-            this.btTru.Location = new System.Drawing.Point(359, 305);
+            this.btTru.Location = new System.Drawing.Point(232, 305);
             this.btTru.Name = "btTru";
-            this.btTru.Size = new System.Drawing.Size(159, 72);
+            this.btTru.Size = new System.Drawing.Size(94, 72);
             this.btTru.TabIndex = 2;
             this.btTru.Text = "Trừ";
             this.btTru.UseVisualStyleBackColor = true;
             this.btTru.Click += new System.EventHandler(this.btTru_Click);
             // 
+            // btNhan
+            // 
+            this.btNhan.Location = new System.Drawing.Point(393, 305);
+            this.btNhan.Name = "btNhan";
+            this.btNhan.Size = new System.Drawing.Size(94, 72);
+            this.btNhan.TabIndex = 2;
+            this.btNhan.Text = "Nhân";
+            this.btNhan.UseVisualStyleBackColor = true;
+            this.btNhan.Click += new System.EventHandler(this.btCong_Click);
+            // 
+            // btChia
+            // 
+            this.btChia.Location = new System.Drawing.Point(559, 305);
+            this.btChia.Name = "btChia";
+            this.btChia.Size = new System.Drawing.Size(94, 72);
+            this.btChia.TabIndex = 2;
+            this.btChia.Text = "Chia";
+            this.btChia.UseVisualStyleBackColor = true;
+            this.btChia.Click += new System.EventHandler(this.btTru_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(663, 582);
+            this.ClientSize = new System.Drawing.Size(839, 582);
+            this.Controls.Add(this.btChia);
+            this.Controls.Add(this.btNhan);
             this.Controls.Add(this.btTru);
             this.Controls.Add(this.btCong);
-            this.Controls.Add(this.txtTong);
+            this.Controls.Add(this.txtKQ);
             this.Controls.Add(this.txtB);
             this.Controls.Add(this.txtA);
             this.Controls.Add(this.label3);
@@ -135,9 +159,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtA;
         private System.Windows.Forms.TextBox txtB;
-        private System.Windows.Forms.TextBox txtTong;
+        private System.Windows.Forms.TextBox txtKQ;
         private System.Windows.Forms.Button btCong;
         private System.Windows.Forms.Button btTru;
+        private System.Windows.Forms.Button btNhan;
+        private System.Windows.Forms.Button btChia;
     }
 }
 

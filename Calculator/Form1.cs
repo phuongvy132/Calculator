@@ -19,13 +19,19 @@ namespace Calculator
 
         private void btCong_Click(object sender, EventArgs e)
         {
-            if (txtA.Text != String.Empty && txtB.Text != String.Empty)
-            {
-                double a = double.Parse(txtA.Text);
-                double b = double.Parse(txtB.Text);
-                double c = a + b;
-                txtTong.Text = c.ToString();
-            }
+            int a = int.Parse(txtA.Text);
+            int b = int.Parse(txtB.Text);
+            Calculation c = new Calculator.Calculation(a, b);
+            txtKQ.Text = c.Execute("+").ToString(); 
+
+
+            //if (txtA.Text != String.Empty && txtB.Text != String.Empty)
+            //{
+            //    double a = double.Parse(txtA.Text);
+            //    double b = double.Parse(txtB.Text);
+            //    double c = a + b;
+            //    txtTong.Text = c.ToString();
+            //}
         }
 
         private void btTru_Click(object sender, EventArgs e)
@@ -33,7 +39,7 @@ namespace Calculator
             double a = double.Parse(txtA.Text);
             double b = double.Parse(txtB.Text);
             double c = a - b;
-            txtTong.Text = c.ToString();
+            txtKQ.Text = c.ToString();
 
         }
     }
