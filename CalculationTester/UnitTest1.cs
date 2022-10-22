@@ -45,5 +45,6 @@ namespace CalculationTester
             Calculation c = new Calculation(2, 0);
             c.Execute("/");
         }
+
     }
 }
